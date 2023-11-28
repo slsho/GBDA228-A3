@@ -1,84 +1,131 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sophia Ho</title>
-    <style>
-      body {
-        background-color: #FCFBF4;
-      }
-
-      .header {
-        background-color: #F3D1DC;
-        color: #B16E46;
-        font-size: 30px;
-        padding: 20px;
-        text-align: center;
-      }
-
-      .subtitle {
-        font-size: 25px;
-        font-style: italic;
-        text-align: center;
-      }
-
-      < !-- Code copied from: https: //www.w3schools.com/w3css/w3css_slideshow.asp
-
-      Author: w3schools.com Name: Horizontal Bar Description: Displays an Horizontal Bar. Date retrieved: November 20th 2023 -->< !-- Copied code starts -->
-      ul {
-        list-style-type: none;
-        margin: 0;
-        overflow: hidden;
-        background-color: #333;
-      }
-
-      li {
-        float: left;
-      }
-
-      li a {
-        display: block;
-        color: white;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
-
-      < !-- Copied code ends -->
-       .container {
-        width: 50%;
-        margin: auto;
-        border: 5px solid #F3D1DC;
-        padding: 20px;
-        overflow: hidden;
-      }
-
-      .box {
-        float: left;
-        width: 50%;
-      }
-    </style>
-  </head>
   <body>
-    <br>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Sophia Ho</title>
+      <style>
+        body {
+          background-color: #FCFBF4;
+        }
+
+        #section0,
+        #section1,
+        #section2,
+        #section3,
+        #section4 {
+          height: 700px;
+        }
+
+
+        .header {
+          background-color: #F3D1DC;
+          color: #B16E46;
+          font-size: 30px;
+          padding: 20px;
+          text-align: center;
+        }
+
+        .links {
+          background-color: #A94064;
+          text-align: center;
+          text-decoration: none;
+          padding: 10px;
+        }
+
+        .subtitle {
+          font-size: 25px;
+          font-style: italic;
+          text-align: center;
+        }
+
+        #section0 {
+          .container {
+            color: #B16E46;
+            font-size: 20px;
+            text-align: right;
+            padding: 30
+          }
+
+          .image {
+            float: left;
+            padding: 40;
+          }
+        }
+
+        #section1 {
+          background-color: #423711;
+        }
+
+        #section2 {
+          background-color: #bbb5a7;
+        }
+
+        #section3 {
+          background-color: #8b2e25;
+        }
+
+        #section4 {
+          background-color: #787254;
+        }
+
+        #footer {
+          background-color: #F3D1DC;
+          color: #B16E46;
+          padding: 10px;
+          text-align: center;
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+        }
+      </style>
+    </head>
     <div class="header">
       <h1> Sophia Ho </h1>
       <p class="subtitle"> ˗ˋˏ ♡ ˎˊ˗ an aspiring digital creator! ˗ˋˏ ♡ ˎˊ˗</p>
     </div>
-    <ul>
-      <li><a class="active" href="#home">Home</a></li>
-      <li><a href="#about me">About Me</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#Quiz">Quiz</a></li>
-    </ul>
+    <div class="links">
+      <a href="#section0">About Me</a>
+      <a href="#section1">1</a>
+      <a href="#section2">2</a>
+      <a href="#section3">3</a>
+      <a href="#section4">4</a>
+    </div>
     <br>
-    <div class="container">
-      <div class="box">
-        <h2>About Me!</h2>
+
+    <div id="section0">
+      <div class="image">
+        <img src="sophiaho.png" alt="Sophia's Image" width=400px>
+      </div>
+      <div class="container">
+        <h1>About Me!</h1>
         <p>Sophia is a 2A student in GBDA who has multiple different interests
-          in the digital art landscape.She hopes to work for her dream company in the future who is Riot Games.
+          in the digital art landscape. She hopes to work for her dream company
+          in the future who is Riot Games. She currently plays around with digital painting, nail art,
         </p>
       </div>
     </div>
+
+
+    <div id="section1">
+      Your amazing content goes here!
+    </div>
+    <div id="section2">
+      Your amazing content goes here!
+    </div>
+    <div id="section3">
+      Your amazing content goes here!
+    </div>
+    <div id="section4">
+      Your amazing content goes here!
+    </div>
+
+
+    <div id="footer">
+      <p>&copy; 2023 SLSHO. All rights reserved.</p>
+      <p class="contact"><a href="slshoe@uwaterloo.ca">slsho@uwaterloo.ca</a></p>
+    </div>
+
   </body>
 </html>
